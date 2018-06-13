@@ -1,5 +1,6 @@
 package com.dice;
 
+import java.time.LocalDateTime;
 import java.util.concurrent.TimeUnit;
 
 import javax.management.RuntimeErrorException;
@@ -55,5 +56,6 @@ public class DiceJobSearch {
 			System.out.println("Step fail = Keyword : "+keyword + " search returned "+countResult + " result in "+location);
 		}
 		driver.close();
+		System.out.println("TEST COMPLETED  ==>" +LocalDateTime.now());
 	}
 }
